@@ -1,0 +1,53 @@
+h1 { text-align: center; } 
+svg {
+  font-size: 14px;
+}
+.axis line, .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  text-shadow: 0 1px 0 #fff;
+}
+
+.polylines path {
+  fill: none;
+  stroke-opacity: .2;
+  stroke-width: 2.5px;
+}
+
+.polylines path.fade {
+  stroke: #000;
+  stroke-opacity: .05;
+}
+
+.footer {
+  font-size: 18px;
+  font-style: oblique;
+}
+
+.footer line {
+  stroke-width: 6px;
+}
+
+.setosa {
+  stroke: #900;
+}
+
+.versicolor {
+  stroke: #090;
+}
+
+.virginica {
+  stroke: #009;
+}
+
+.brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+
