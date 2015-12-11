@@ -41,7 +41,7 @@ int main()
 				min_y = j;
 			}
 		printf("select column: %g at: %d \n",min,min_y);
-		if (min == 0)break; // no nore iteration
+		if (min == 0) break; // no nore iteration, =0 for clearity, use min-0 <eps may be better
 		// select max in rows
 		float max = 0;
 		int max_x = 0;
@@ -51,6 +51,11 @@ int main()
 				max = matrix[i][min_y] / matrix[i][0];
 				max_x = i;
 			}
+		if (max == 0 ){
+			printf("no solution\n");
+			fclose (pFile);
+			free(matrix);
+		};
 		printf("select row : %g at: %d \n",max, max_x);
 		
 		// elementary row transformation 
@@ -71,20 +76,7 @@ int main()
 	}
 	// print solution
 	matrix_print();
-	printf("solution:\n");
-	printf ("%g\t\n",matrix[0][0]);
-	for (int i = 1; i < y; i++)
-		if(matrix[0][i] == 0){
-			for (int j = 0; j < x; j++)
-				if (matrix[j][i] == 1)
-				{
-					printf("%g\t",matrix[j][0]);
-					break;
-				}
-			}
-		else
-			printf("%g\t",0.0);
-	printf("\n");
+	printf ("solution:\n%g\t\n",matrix[0][0]);
 	fclose (pFile);
 	free(matrix);
 	return 0;

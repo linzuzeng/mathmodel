@@ -1,4 +1,4 @@
 <html>
- <a href="/iris">Iris data visualized with parallel coordinates</a>
- <a href="/simplex">Simplex method implementation in C</a>
+ <a href="./iris">Iris data visualized with parallel coordinates</a><br/>
+ <a href="./simplex">Simplex method implementation in C</a>
 </html>

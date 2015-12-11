@@ -89,7 +89,7 @@
 
     <div style="display: none;" class="spinner" id="spinner"></div>
     <div class="emscripten" id="status"></div>
-This web app is generated from the <a href="./simplex.c">original C code</a>. INPUT FORMAT: Put the RIGHT-HAND-SIDE on the first column from left!<br/>
+This web app is generated from the <a href="./simplex.c">original C code </a>. INPUT FORMAT: Put the RIGHT-HAND-SIDE on the first column from left!<br/>
 <span id="controls">
 
   <span><input value="Solve" onclick="fileinit();Module['_main']();" type="button">
