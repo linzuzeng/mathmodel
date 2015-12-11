@@ -104,6 +104,7 @@
 
     <script type="text/javascript">
 fileinit=function(){
+ document.getElementById('output').value=" ";
 FS.writeFile('/input.txt', document.getElementById('input').value, { encoding: "utf8",flags:"w+" });
 };
       var statusElement = document.getElementById('status');
